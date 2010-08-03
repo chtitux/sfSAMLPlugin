@@ -15,7 +15,7 @@
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id: sfGuardRouting.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
-class sfGuardRouting
+class sfSAMLRouting
 {
   /**
    * Listens to the routing.load_configuration event.
