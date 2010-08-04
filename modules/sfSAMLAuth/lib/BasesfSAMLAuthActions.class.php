@@ -10,11 +10,13 @@
  */
 
 /**
- *
- * @package    symfony
- * @subpackage plugin
+ * sfSAMLPlugin configuration.
+ * 
+ * @package    sfSAMLPlugin
+ * @subpackage sfSAMLAuth
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: BasesfGuardAuthActions.class.php 23800 2009-11-11 23:30:50Z Kris.Wallsmith $
+ * @author     Théophile Helleboid <t.helleboid@iariss.fr>
+ * @version    SVN: $Id$
  */
 class BasesfSAMLAuthActions extends sfActions
 {

@@ -8,6 +8,15 @@
  * file that was distributed with this source code.
  */
 
+/**
+ * sfSAMLPlugin configuration.
+ * 
+ * @package    sfSAMLPlugin
+ * @subpackage sfSAMLAuth
+ * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
+ * @author     Théophile Helleboid <t.helleboid@iariss.fr>
+ * @version    SVN: $Id$
+ */
 class BasesfSAMLAuthComponents extends sfComponents
 {
   public function executeSignin_form()
