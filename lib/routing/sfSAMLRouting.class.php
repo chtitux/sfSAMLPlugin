@@ -14,6 +14,7 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
+ * @author     Théophile Helleboid <t.helleboid@iariss.fr>
  * @version    SVN: $Id: sfGuardRouting.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfSAMLRouting
