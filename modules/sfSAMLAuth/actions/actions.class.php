@@ -19,13 +19,6 @@
  */
 require_once(dirname(__FILE__).'/../lib/BasesfSAMLAuthActions.class.php');
 
-/**
- *
- * @package    symfony
- * @subpackage plugin
- * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id$
- */
 class sfSAMLAuthActions extends BasesfSAMLAuthActions
 {
 }
