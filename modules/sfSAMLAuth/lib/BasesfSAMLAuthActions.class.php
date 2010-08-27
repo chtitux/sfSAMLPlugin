@@ -16,7 +16,6 @@
  * @subpackage sfSAMLAuth
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @author     Théophile Helleboid <t.helleboid@iariss.fr>
- * @version    SVN: $Id$
  */
 class BasesfSAMLAuthActions extends sfActions
 {
@@ -40,6 +39,7 @@ class BasesfSAMLAuthActions extends sfActions
       // save the referer
       $user_referer = $user->getReferer($request->getReferer());
 
+      // Try to find the user with his uid
       $query = Doctrine_Core::getTable('sfGuardUser')->createQuery('u')
         ->where('u.username = ?', $attributes['uid'][0]);
 
@@ -59,6 +59,8 @@ class BasesfSAMLAuthActions extends sfActions
         $guard_user->save();
       }
 
+      // Let the User signin
+      // The auth is not rembered : the IdP can decide that
       $this->getUser()->signin($guard_user, $remember = false);
 
       // always redirect to a URL set in app.yml

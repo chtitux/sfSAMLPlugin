@@ -16,7 +16,6 @@
  * @subpackage sfSAMLAuth
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @author     Théophile Helleboid <t.helleboid@iariss.fr>
- * @version    SVN: $Id: sfDoctrineGuardPluginConfiguration.class.php 25546 2009-12-17 23:27:55Z Jonathan.Wage $
  */
 class sfSAMLPluginConfiguration extends sfPluginConfiguration
 {
@@ -25,6 +24,7 @@ class sfSAMLPluginConfiguration extends sfPluginConfiguration
    */
   public function initialize()
   {
+    // Add route for login et logout
     if (in_array('sfSAMLAuth', sfConfig::get('sf_enabled_modules', array())))
     {
       $this->dispatcher->connect('routing.load_configuration', array('sfSAMLRouting', 'listenToRoutingLoadConfigurationEvent'));

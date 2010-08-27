@@ -6,5 +6,5 @@
 
 <h3><?php echo __('Login below to gain access', null, 'sf_guard') ?></h3>
 
-// FIXME : lien vers l'auth
-<?php echo get_component('sfGuardAuth', 'signin_form') ?>
+<!-- FIXME : please test that -->
+<?php echo get_component('sfSAMLAuth', 'signin_form') ?>

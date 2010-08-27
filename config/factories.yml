@@ -1,3 +1,5 @@
+# Needed in order to correct bug http://trac.symfony-project.org/ticket/9021
+# SimpleSAMLPhp write in $_SESSION after exit() is called
 all:
   storage:
     class:      SAMLsfSessionStorage

@@ -1,6 +1,4 @@
-secure:
-  is_secure: false
-
+# signin & signout have to have free access
 signin:
   is_secure: false
 
