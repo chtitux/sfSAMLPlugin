@@ -1,0 +1,11 @@
+Pour installer sfSAMLPlugin, vous devez :
+1. Télécharger le plugin sfSAMLPlugin et le décompresser dans le dossier plugins/ de symfony
+2. Installer le plugin sfDoctrineGuardPlugin : http://www.symfony-project.org/plugins/sfDoctrineGuardPlugin
+3. Télécharger SimpleSAMLPhp : http://simplesamlphp.org/download
+4. Décompresser SimpleSAMLPhp dans le dossier /lib/vendor/
+5. Ajouter les lignes suivantes dans config/ProjectConfiguration.php de symfony :
+    $this->enablePlugins('sfSAMLPlugin');
+    // Load simpleSAMLphp
+    require_once dirname(__FILE__).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
+Attention : la 3ème ligne doit être configurée avec le chemin de simplesamlphp
+7. 

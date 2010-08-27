@@ -1,0 +1,4 @@
+all:
+  .settings:
+    # For compatibility with simpleSAMLphp
+    session_name:           null
