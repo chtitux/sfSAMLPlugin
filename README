@@ -20,3 +20,5 @@ If you want to install sfSAMLPlugin, follow these steps :
     require_once dirname(__FILE__).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
 Attention : la 3ème ligne doit être configurée avec le chemin de simplesamlphp
 7. 
+
+== TODO ==
