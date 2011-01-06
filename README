@@ -1,13 +1,14 @@
 README
-======
-
+================================
 sfSAMLPlugin is a symfony plugin that allow you to interface SAML with sfDoctrineGuardPlugin.
 
 sfSAMLPlugin uses simpleSAMLPhp ( http://simplesamlphp.org/ ) for dealing with the Identity Provider (IdP).
 With sfSAMLPlugin, you symfony application is a Service Provider (SP).
 
 
-== Installation ==
+Installation
+================================
+
 If you want to install sfSAMLPlugin, follow these steps :
 
 1. Télécharger le plugin sfSAMLPlugin et le décompresser dans le dossier plugins/ de symfony
@@ -21,4 +22,4 @@ If you want to install sfSAMLPlugin, follow these steps :
 Attention : la 3ème ligne doit être configurée avec le chemin de simplesamlphp
 7. 
 
-== TODO ==
+
