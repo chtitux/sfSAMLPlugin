@@ -12,7 +12,6 @@ Installation
 If you want to install sfSAMLPlugin, follow these steps :
 
 1. get the source there : https://github.com/chtitux/sfSAMLPlugin , decompress it in the plugins/ directory
-
 2. Install sfDoctrineGuardPlugin (just download it and put it in the plugins/ directoy in your symfony application)
 3. Download SimpleSAMLphp and decompress it in the ```lib/vendor/``` directory
 4. Add these lines in the ```config/ProjectConfiguration.php``` :
