@@ -19,6 +19,9 @@ If you want to install sfSAMLPlugin, follow these steps :
     ```php
     <?php
     // ...
+    $this->enablePlugins('sfDoctrinePlugin');
+    $this->enablePlugins('sfDoctrineGuardPlugin');
+
     $this->enablePlugins('sfSAMLPlugin');
     // Load simpleSAMLphp
     require_once dirname(FILE).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
@@ -37,15 +40,17 @@ If you want to install sfSAMLPlugin, follow these steps :
 6. In your lib/vendor/simplesamlphp/config/config.php Change the config name to "symfony" like that : 
 
     ```php
+       <?php
+       // ...
        'session.phpsession.cookiename'  => "symfony", 
     ```
 
 7. Configure your IdP in ```simplesamlphp/metadata/saml20-idp-remote.php```
 8. simpleSAMLphp must be visible from the web (the user will be redirected to it). You have to add the following line in your Apache config : 
 
-```
+    ```apache
     Alias /simplesaml /home/data/www/login/lib/vendor/simplesamlphp/www
-```
+    ```
 
 9. You can test it with the default routes : 
 ```/saml/login``` for login, ```/saml/logout``` for logout
