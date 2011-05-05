@@ -34,7 +34,7 @@ If you want to install sfSAMLPlugin, follow these steps :
 
 6. In your lib/vendor/simplesamlphp/config/config.php Change the config name to "symfony" like that : 
 
-```
+```php
        'session.phpsession.cookiename'  => "symfony", 
 ```
 
