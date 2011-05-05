@@ -34,7 +34,9 @@ If you want to install sfSAMLPlugin, follow these steps :
 
 6. In your lib/vendor/simplesamlphp/config/config.php Change the config name to "symfony" like that : 
 
-```       'session.phpsession.cookiename'  => "symfony", ```
+```
+       'session.phpsession.cookiename'  => "symfony", 
+```
 
 7. Configure your IdP in ```simplesamlphp/metadata/saml20-idp-remote.php```
 8. simpleSAMLphp must be visible from the web (the user will be redirected to it). You have to add the following line in your Apache config : 
