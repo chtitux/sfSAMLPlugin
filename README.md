@@ -15,11 +15,13 @@ If you want to install sfSAMLPlugin, follow these steps :
 2. Install sfDoctrineGuardPlugin (just download it and put it in the plugins/ directoy in your symfony application)
 3. Download SimpleSAMLphp and decompress it in the ```lib/vendor/``` directory
 4. Add these lines in the ```config/ProjectConfiguration.php``` : 
-```php
-$this->enablePlugins('sfSAMLPlugin');
-// Load simpleSAMLphp
-require_once dirname(FILE).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
-```
+
+    ```php
+    $this->enablePlugins('sfSAMLPlugin');
+    // Load simpleSAMLphp
+    require_once dirname(FILE).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
+    ```
+
 5. In the ```apps/frontend/config/settings.yml``` , enable at least the modules sfGuardAuth and sfSAMLAuth. You can enable all the modules of
 sfDoctrineGuardPlugin like that : 
 ```yaml
