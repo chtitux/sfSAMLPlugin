@@ -19,19 +19,19 @@ If you want to install sfSAMLPlugin, follow these steps :
     ```php
     <?php
 
-class ProjectConfiguration extends sfProjectConfiguration
-{
-  public function setup()
-  {
-    $this->enablePlugins('sfDoctrinePlugin');
-    
-    // Add these 4 following lines :
-    $this->enablePlugins('sfDoctrineGuardPlugin');
-    $this->enablePlugins('sfSAMLPlugin');
-    // Load simpleSAMLphp
-    require_once dirname(FILE).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
-  }
-}
+    class ProjectConfiguration extends sfProjectConfiguration
+    {
+        public function setup()
+        {
+        $this->enablePlugins('sfDoctrinePlugin');
+        
+        // Add these 4 following lines :
+        $this->enablePlugins('sfDoctrineGuardPlugin');
+        $this->enablePlugins('sfSAMLPlugin');
+        // Load simpleSAMLphp
+        require_once dirname(FILE).'/../lib/vendor/simplesamlphp/lib/_autoload.php';
+      }
+    }
 
 
 
