@@ -47,7 +47,7 @@ If you want to install sfSAMLPlugin, follow these steps :
         enabled_modules:        [default, sfGuardAuth, sfSAMLAuth, sfGuardGroup, sfGuardUser, sfGuardPermission]
     ```
 
-6. In your lib/vendor/simplesamlphp/config/config.php Change the config name to "symfony" like that : 
+6. In your ```lib/vendor/simplesamlphp/config/config.php``` Change the config name to "symfony" like that : 
 
     ```php
        <?php
@@ -61,6 +61,18 @@ If you want to install sfSAMLPlugin, follow these steps :
     ```apache
     Alias /simplesaml /home/data/www/login/lib/vendor/simplesamlphp/www
     ```
+    
+9. Change the class that extends myUser to ```sfGuardSecurityUser``` : 
+
+    ```
+    <?php
+
+    class myUser extends sfGuardSecurityUser
+    {
+    }
+    ```
+    
+10. You have to create a database and a sfGuardUser table. sfSAMLPlugin add a sfGuardUser in the database
 
 9. You can test it with the default routes : 
 ```/saml/login``` for login, ```/saml/logout``` for logout
